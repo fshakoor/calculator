@@ -1,6 +1,11 @@
-body {
+* {
     box-sizing: border-box;
+}
+
+body {
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 /* colors */
@@ -32,8 +37,12 @@ body, .display {
 .display {
     display: flex;
     width: 430px;
-    height: 170px;
+    min-height: 170px;
     margin-top: 20px;
+    justify-content: flex-end;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .buttons {
@@ -79,6 +88,15 @@ body, .display {
 }
 
 .smaller-buttons, .big-buttons {
-    max-width: 450px;
+    max-width: 500px;
     gap: 10px;
+}
+
+.displayText {
+    display: flex;
+    align-items: flex-end;
+    color: #BB4430;
+    margin: 0;
+    padding: 15px 25px;
+    line-height: 1.2;
 }
