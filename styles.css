@@ -6,43 +6,40 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
-}
-
-/* colors */
-body, .display {
-    background-color: #ECC8AF;
+    background-color: #FFFFFF;
 }
 
 .container, .display, .big-buttons button, .smaller-buttons button {
-    border: 3px #BB4430 solid;
+    border: 2px #252525 solid;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bolder;
-    color: #ECC8AF;
+    color: #FFFFFF;
     border-radius: 8px;
 }
 
 .container {
-    background-color: #E7AD99;
+    background-color: #bebebd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px auto 0px;
+    margin: 20px auto 0;
     max-width: 600px;
-    padding: 20px;
+    padding: 10px;
     gap: 20px;
 }
 
 .display {
     display: flex;
-    width: 430px;
-    min-height: 170px;
+    width: 330px;
+    min-height: 125px;
     margin-top: 20px;
     justify-content: flex-end;
     text-align: right;
     word-wrap: break-word;
     word-break: break-all;
+    background-color: #FFFFFF;
 }
 
 .buttons {
@@ -60,10 +57,11 @@ body, .display {
 }
 
 .big-buttons button {
-    background-color: #CE796B;
+    background-color: #EDE6E3;
+    color: #252525;
     cursor: pointer;
-    width: 210px;
-    height: 100px;
+    width: 160px;
+    height: 75px;
 }
 
 .smaller-buttons {
@@ -76,11 +74,14 @@ body, .display {
 }
 
 .smaller-buttons button {
-    background-color: #CE796B;
     padding: 0;
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.seven, .eight, .nine, .four, .five, .six, .one, .two, .three, .decimal, .zero, .equals {
+    background-color: #36413E;
 }
 
 .big-buttons button:hover, .smaller-buttons button:hover {
@@ -88,15 +89,19 @@ body, .display {
 }
 
 .smaller-buttons, .big-buttons {
-    max-width: 500px;
+    max-width: 375px;
     gap: 10px;
 }
 
 .displayText {
     display: flex;
     align-items: flex-end;
-    color: #BB4430;
+    color: #252525;
     margin: 0;
     padding: 15px 25px;
     line-height: 1.2;
+}
+
+.orange {
+    background-color: #F06449;
 }
