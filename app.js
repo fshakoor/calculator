@@ -246,15 +246,17 @@ btnEquals.addEventListener('click', () => {
     else if (expression.includes('-')) {operator = 'subtract'}
     else if (expression.includes('x')) {operator = 'multiply'}
     else if (expression.includes('÷')) {operator = 'divide'}
-    num1 = parseInt(num1)
-    num2 = parseInt(num2)
-    if (num2 == 0 && operator == 'divide') {
-      alert("You can't divide by zero!")
-      calcDisplay.textContent = ''
-      num1 = 0
-      num2 = 0
+    if (num1.length !== 0 && num2.length !== 0) {
+      num1 = parseInt(num1)
+      num2 = parseInt(num2)
+      if (num2 == 0 && operator == 'divide') {
+        alert("You can't divide by zero!")
+        calcDisplay.textContent = ''
+        num1 = 0
+        num2 = 0
+      }
+      operate(num1,num2,operator)
     }
-    operate(num1,num2,operator)
   }
 )
 
