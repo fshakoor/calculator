@@ -294,7 +294,19 @@ const multiply = function(num1,num2) {
 
 const divide = function(num1,num2) {
   let quotient = num1/num2;
-  console.log((quotient.length))
-  if (num2 === 0) {calcDisplay.textContent = ''}
-  else {calcDisplay.textContent = quotient};
+  if (Number.isInteger(quotient)) {
+    if (num2 === 0) {
+      calcDisplay.textContent = ''}
+    else {
+      calcDisplay.textContent = quotient
+    }
+  }
+  else {
+    function round(value, precision) {
+      var multiplier = Math.pow(10, precision || 0);
+      return Math.round(value * multiplier) / multiplier;
+    }
+    quotient = round(quotient,3)
+    calcDisplay.textContent = quotient
+  }
 }
